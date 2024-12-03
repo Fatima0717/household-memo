@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>家計簿</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>今月の家計簿リスト</h1>
+        <form id="expense-form">
+            <div>
+                <label for="housing">家賃：</label>
+                <input type="number" id="housing" placeholder="0" value="86000">
+                <button type="button" class="remove-button">削除</button>
+            </div>
+            <div class="expense-item">
+                <label for="food">食費：</label>
+                <input type="number" id="food" placeholder="0" value="80000">
+                <button type="button" class="remove-button">削除</button>
+            </div>
+            <div class="expense-item">
+                <label for="utility">光熱費：</label>
+                <input type="number" id="utility" placeholder="0" value="17000">
+                <button type="button" class="remove-button">削除</button>
+            </div>
+            <div class="expense-item">
+                <label for="communication">通信費：</label>
+                <input type="number" id="communication" placeholder="0" value="18600">
+                <button type="button" class="remove-button">削除</button>
+            </div>
+            <div class="expense-item">
+                <label for="transportation">交通費：</label>
+                <input type="number" id="transportation" placeholder="0" value="5000">
+                <button type="button" class="remove-button">削除</button>
+            </div>
+            <div class="expense-item">
+                <label for="medical">医療費：</label>
+                <input type="number" id="medical" placeholder="0" value="10000">
+                <button type="button" class="remove-button">削除</button>
+            </div>
+            <div class="expense-item">
+                <label for="education">教育費：</label>
+                <input type="number" id="education" placeholder="0" value="1100">
+                <button type="button" class="remove-button">削除</button>
+            </div>
+            <div class="expense-item">
+                <label for="insurance">保険料：</label>
+                <input type="number" id="insurance" placeholder="0" value="14800">
+                <button type="button" class="remove-button">削除</button>
+            </div>
+            <div class="expense-item">
+                <label for="tax">年金：</label>
+                <input type="number" id="tax" placeholder="0" value="33040">
+                <button type="button" class="remove-button">削除</button>
+            </div>
+            <div class="expense-item">
+                <label for="household">日用品費：</label>
+                <input type="number" id="household" placeholder="0" value="8000">
+                <button type="button" class="remove-button">削除</button>
+            </div>
+            <div class="expense-item">
+                <label for="clothing">衣服費：</label>
+                <input type="number" id="clothing" placeholder="0" value="6000">
+                <button type="button" class="remove-button">削除</button>
+            </div>
+            <div class="expense-item">
+                <label for="beauty">美容費：</label>
+                <input type="number" id="beauty" placeholder="0" value="10000">
+                <button type="button" class="remove-button">削除</button>
+            </div>
+            <div class="expense-item">
+                <label for="subscription">サブスクリプション：</label>
+                <input type="number" id="subscription" placeholder="0" value="9500">
+                <button type="button" class="remove-button">削除</button>
+            </div>
+            <div class="expense-item">
+                <label for="entertainment">娯楽費：</label>
+                <input type="number" id="entertainment" placeholder="0" value="15000">
+                <button type="button" class="remove-button">削除</button>
+            </div>
+            <button type="button" id="add-random">ランダム項目追加</button>
+            <div class="total">
+                <p>合計金額:<span id='total'> 円</p>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
